@@ -10,8 +10,23 @@ export default ApplicationAdapter = DS.RESTAdapter.extend({
   },
   buildURL: function(type, id, record) {
     if(type === "post") {
+      console.log(id);
+      console.log(record);
       type = "entries";
     }
     return this._super(type, id, record);
+  },
+  findQuery: function(store, type, query) {
+    if (this.sortQueryParams) {
+      query = this.sortQueryParams(query);
+    }
+    console.log(query);
+    if(query.slug !== "") {
+      query = {
+        "content_type": "2Iq3Gza1AciCGcA0c4A0Oc",
+        "fields.slug": query.slug
+      }
+    }
+    return this.ajax(this.buildURL(type.typeKey), 'GET', { data: query });
   }
 });
