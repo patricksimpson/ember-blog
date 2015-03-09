@@ -1,3 +1,28 @@
 <h2 id="title">Patrick Simpson</h2>
+<div class="nav">
+  {{#link-to 'home' class="link"}}Home{{/link-to}}
+  {{#link-to 'posts' class="link"}}Posts{{/link-to}}
+  {{#link-to 'about' class="link"}}About{{/link-to}}
+</div>
 
-{{outlet}}
+<div class="content">
+  <div class="wrapper">
+    {{outlet}}
+  </div>
+  <div class="about-block">
+    <div class="wrapper">
+        <div class="block">
+          <div class="pure-u-1 pure-u-md-1-2 about">
+              <h2 class="about-block--title">There is more to love:</h2>
+              <p>Feel free to drop me a line on twitter <a href="https://twitter.com/SimpsonPatrick">@SimpsonPatrick</a>.
+                I don't mind being heckled and the ocassional banter.
+              </p>
+              <p>Don't forget, you can read more interesting facts <a href="/about">about me</a>.</p>
+              <h3>Thanks!</h3>
+          </div>
+          <div class="pure-u-1 pure-u-md-1-2 face-wrapper"><img src="/assets/imgs/me2.jpg" alt="My Face" title="My Face" class="face"></div>
+        </div>
+    </div>
+  </div>
+</div>
+<footer><div class="footer">Developed with purpose, <span class="current-year">2015.</span></div></footer>
