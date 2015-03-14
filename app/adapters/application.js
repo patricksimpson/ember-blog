@@ -3,6 +3,6 @@ import ApplicationAdapter from './application';
 import ENV from "../config/environment";
 
 export default ApplicationAdapter = DS.RESTAdapter.extend({
-  host: 'http://pks.dev/wp-json',
-  namespace: 'wp'
+  host: 'http://pks.dev',
+  namespace: 'wp-json'
 });

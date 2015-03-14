@@ -1,8 +1,13 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model: function (params) {
-    return this.store.find('post', {slug: params.post_slug})
+  model: function(params) {
+    var _this = this;
+    return new Ember.RSVP.Promise(function(resolve) {
+      _this.store.find('post', {'filter[name]': params.post_slug}).then(function(post) {
+        resolve(post.get('firstObject'));
+      });
+    });
   },
   serialize: function (model) {
     return {
