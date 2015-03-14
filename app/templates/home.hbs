@@ -1,7 +1,6 @@
 {{outlet}}
 
-Most recent post...
-
+<h1>Most recent posts...</h1>
 {{#each post in model}}
-  {{post.title}}
+  {{post-listing post=post}}
 {{/each}}
