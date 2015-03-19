@@ -9,9 +9,9 @@ var Router = Ember.Router.extend({
 Router.map(function() {
   if(window && typeof($) !== "undefined" && !this.isStaticContentRemoved) {
     $('.ember-view').addClass('timebomb');
-    Ember.run.schedule('afterRender', this, function(){
-      $('.timebomb').remove();
-    });
+    Ember.run.later(this, function(){
+      $('.timebomb').hide();
+    }, 350);
     this.isStaticContentRemoved = true;
   }
   this.resource("home", {
