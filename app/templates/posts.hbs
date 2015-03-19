@@ -1,6 +1,11 @@
 {{outlet}}
-<ul>
-{{#each post in model}}
-  <li>{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
-{{/each}}
-</ul>
+<div class="wrapper">
+  <div class="block">
+    <h2 class="block-title">Posts</h2>
+    <ul class="list">
+      {{#each post in model}}
+        <li class="list--item">{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+      {{/each}}
+    </ul>
+  </div>
+</div>
