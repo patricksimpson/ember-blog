@@ -1,0 +1,25 @@
+.nav {
+  background-color: $c-nav_bg;
+  display: block;
+  text-align: center;
+  padding: 0;
+
+  .link {
+    transition: all 1s;
+    color: $c-nav-link;
+    padding: 1em;
+
+    @media (min-width: 25em) {
+      padding: 1em 1.5em;
+      padding: 1em;
+    }
+
+    display: inline-block;
+    &.active {
+      background-color: darken($c-nav_bg, 5%);
+    }
+    &:hover {
+      background-color: lighten($c-nav_bg, 5%);
+    }
+  }
+}

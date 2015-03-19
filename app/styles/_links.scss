@@ -1,0 +1,33 @@
+a, .about a, .link {
+  color: $c-link;
+  text-decoration: none;
+  transition: all 0.5s;
+  &:hover {
+    color: darken( $c-link, 20% );
+  }
+}
+
+.site-link {
+  color: $c-site-link;
+  text-decoration: none;
+
+  &:hover {
+    color: darken($c-site-link, 20%);
+  }
+}
+
+.inline-link {
+  @extend .link;
+  color: inherit;
+}
+
+.right-image {
+  max-width: 100px;
+  float: right;
+  margin-left: 1em;
+}
+.rounded-image {
+  border-radius: 999em;
+  border: 5px solid #333;
+  background-color: #000;
+}

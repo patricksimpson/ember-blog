@@ -1,0 +1,46 @@
+.text-bold {
+  font-family: $f-bold;
+}
+.text-italic {
+  font-family: $f-italic;
+}
+.text-normal {
+  font-family: $f-normal;
+}
+
+.text {
+  padding: 0;
+  margin: 0.25em;
+}
+
+.stuff {
+  font-style: italic;
+  padding: 0 0.25em;
+}
+
+.heading_sub {
+  @extend .text-bold;
+  font-size: 1em;
+  margin: 0.4em 0;
+  border-bottom: 1px solid darken($c-gray, 20%);
+}
+.list-post--title {
+  float: left;
+}
+.list-post--date, .meta--date {
+  float: right;
+  font-size: 0.75em;
+  color: #777;
+}
+
+.post--content {
+  a {
+    text-decoration: underline;
+  }
+
+  pre {
+    padding: 0.5em;
+    margin: 0.5em;
+    background-color: #eee;
+  }
+}

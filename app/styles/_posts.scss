@@ -1,0 +1,36 @@
+.post--title {
+  @extend .text-bold;
+  font-size: 1.65em;
+}
+
+.post--content {
+ border-top: 1px solid #eee;
+}
+
+.post--meta {
+  font-size: 0.9em;
+  color: #777;
+}
+.post--content {
+  h1, h2, h3, h4, h5 {
+    @extend .text-bold;
+  }
+  h2 {
+    font-size: 1.3em;
+  }
+  img {
+    display: block;
+    border: 1px solid #999;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 100%;
+
+    @media (min-width: 35em) {
+      max-width: 75%;
+    }
+
+    @media (min-width: 45em) {
+      max-width: 55%;
+    }
+  }
+}

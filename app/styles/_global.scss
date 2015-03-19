@@ -1,0 +1,16 @@
+body{
+  font-family: $f-normal;
+  background-color: $c-body_bg;
+  color: $c-text;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  max-width: 54em;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}

@@ -1,0 +1,24 @@
+$f-normal: "Open Sans", "Helvetica", sans-serif;
+$f-bold: "Open Sans Bold", "Helvetica", sans-serif;
+$f-italic: "Open Sans Italic", "Helvetica", sans-serif;
+$c-gray: #EEEEEE;
+$c-block: #CDD5D2;
+$c-dark: #222222;
+$c-dark-shadow: #666;
+$c-primary: #8EADC3;
+$c-secondary: #5D717F;
+$c-light: #BAE2FF;
+$c-dark: #333333;
+
+$c-header_bg: #AFC9DD;
+$c-nav_bg: lighten($c-header_bg, 10%);
+$c-content_bg: white;
+$c-about_bg: lighten($c-primary, 20%);
+$c-body_bg: darken($c-about_bg, 5%);
+
+$c-text-alt: $c-gray;
+$c-text: $c-dark;
+$c-site-link: $c-dark;
+$c-about-block-text: $c-dark;
+$c-link: #3F5C7C;
+$c-nav-link: $c-link;

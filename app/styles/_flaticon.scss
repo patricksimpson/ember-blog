@@ -1,0 +1,67 @@
+@font-face {
+	font-family: "Flaticon";
+	src: url("/icons/flaticon.eot");
+	src: url("/icons/flaticon.eot#iefix") format("embedded-opentype"),
+	url("/icons/flaticon.woff") format("woff"),
+	url("/icons/flaticon.ttf") format("truetype"),
+	url("/icons/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.flaticon-battery123:before {
+	content: "\e000";
+}
+.flaticon-chainsaw1:before {
+	content: "\e001";
+}
+.flaticon-download12:before {
+	content: "\e002";
+}
+.flaticon-energy1:before {
+	content: "\e003";
+}
+.flaticon-github13:before {
+	content: "\e004";
+}
+.flaticon-github7:before {
+	content: "\e005";
+}
+.flaticon-instagram16:before {
+	content: "\e006";
+}
+.flaticon-nuclear1:before {
+	content: "\e007";
+}
+.flaticon-nuclear4:before {
+	content: "\e008";
+}
+.flaticon-quote:before {
+	content: "\e009";
+}
+.flaticon-radioactive2:before {
+	content: "\e00a";
+}
+.flaticon-small36:before {
+	content: "\e00b";
+}
+.flaticon-social136:before {
+	content: "\e00c";
+}
+.flaticon-tree79:before {
+	content: "\e00d";
+}
+.flaticon-twitter33:before {
+	content: "\e00e";
+}
+.flaticon-write13:before {
+	content: "\e00f";
+}
+.flaticon-x5:before {
+	content: "\e010";
+}

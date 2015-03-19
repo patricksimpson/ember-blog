@@ -1,0 +1,130 @@
+.block {
+  margin: 0 1em;
+  line-height: 1.5;
+  font-size: 1.15em;
+  padding: 1em 0;
+  .icon:before{
+    margin-left: 0px;
+    margin-right: 5px;
+  }
+}
+
+.block-inner {
+  @extend .block;
+  margin: 0 1em;
+  line-height: 1.5;
+  font-size: 1.15em;
+  padding: 0;
+}
+.content {
+  background-color: $c-content_bg;
+}
+
+.block-title {
+  @extend .text-bold;
+  font-size: 1.35em;
+}
+
+.block_with-list {
+  @extend .block;
+}
+
+.about-block {
+  background-color: $c-about_bg;
+  color: $c-about-block-text;
+}
+
+.about-block--title {
+  @extend .text-bold;
+}
+
+.face-wrapper {
+  text-align: center;
+}
+
+.face {
+  border-radius: 999em;
+  width: 12em;
+  height: 12em;
+  border: 1px solid #999;
+  margin: 1em;
+  text-align: center;
+}
+
+.big-face {
+  border: 1px solid #999;
+  max-width: 100%;
+  margin-right: 1em;
+}
+
+.block-title {
+  margin: 0.25em 0;
+}
+
+.block--sub-title {
+  margin: 0 0 0.5em 0;
+}
+
+.project-block {
+  margin: 0.5em 0;
+  padding: 0.5em 0;
+  clear: both;
+}
+
+.project-title {
+   border-bottom: 1px solid #333;
+}
+
+.project-title_sub {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.project-date {
+  float: right;
+  background-color: #eee;
+  padding: 1em;
+  border-radius: 12em;
+}
+.project-tech {
+  margin: 0;
+  padding: 0;
+  &:after {
+    clear: both;
+  }
+}
+.project-tech--name {
+  list-style: none;
+  float: left;
+  padding: 1em;
+  background-color: #eee;
+  border-radius: 12em;
+  margin-right: 1em;
+  font-size: 0.8em;
+}
+
+.project-description {
+  margin-bottom: 0.5em;
+}
+.project-readmore {
+  font-size: 0.8em;
+  margin-bottom: 0.5em;
+  display: block;
+}
+
+.project-github {
+  a, span {
+    font-size: 0.8em;
+  }
+}
+
+.project-url {
+  margin-bottom: 0.5em;
+}
+.project-link {
+    font-size: 0.8em;
+}
+

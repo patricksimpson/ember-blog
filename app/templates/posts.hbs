@@ -4,7 +4,7 @@
     <h2 class="block-title">Posts</h2>
     <ul class="list">
       {{#each post in model}}
-        <li class="list--item">{{#link-to 'post' post}}{{post.title}}{{/link-to}}</li>
+        <li class="list--item">{{#link-to 'post' post class="list--link"}}<span class="list-post--title">{{post.title}}</span><span class="list--meta meta--date post--date">{{post.date}}</span>{{/link-to}}</li>
       {{/each}}
     </ul>
   </div>
