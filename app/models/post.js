@@ -17,7 +17,8 @@ export default DS.Model.extend({
     return this.get('title').htmlSafe();
   }.property('title'),
   shortDate: function() {
-    console.log(this.get('date'));
-    return moment(this.get('date')).format('MMMM DD, YYYY');
+    if(typeof(moment) !== "undefined") {
+      return moment(this.get('date')).format('MMMM DD, YYYY');
+    }
   }.property('date')
 });
