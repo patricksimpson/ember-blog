@@ -8,9 +8,9 @@ module.exports = function(environment) {
     locationType: 'auto',
     contentSecurityPolicy: {
       'default-src': "'none'",
-      'script-src': "'self' http://pks.dev", // Allow scripts from https://cdn.mxpnl.com
+      'script-src': "http://localhost:4200 'self' http://pks.dev", // Allow scripts from https://cdn.mxpnl.com
       'font-src': "'self' http://fonts.gstatic.com", // Allow fonts to be loaded from http://fonts.gstatic.com
-      'connect-src': "'self' http://pks.dev", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
+      'connect-src': "http://localhost:4200 'self' http://pks.dev", // Allow data (ajax/websocket) from api.mixpanel.com and custom-api.local
       'img-src': "'self'",
       'style-src': "'self' 'unsafe-inline' http://fonts.googleapis.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com 
       'media-src': "'self'"
@@ -34,8 +34,6 @@ module.exports = function(environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
-    ENV.apiKey = ''
-    // ENV.apiKey = process.env.CONTENTFUL_API_KEY;
   }
 
   if (environment === 'test') {
