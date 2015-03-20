@@ -20,7 +20,7 @@ set :branch, 'master'
 
 # Manually create these paths in shared/ (eg: shared/config/database.yml) in your server.
 # They will be linked in the 'deploy:link_shared_paths' step.
-set :shared_paths, []
+set :shared_paths, ['node_modules']
 
 # Optional settings:
   set :user, 'patrick'    # Username in the server to SSH to.
@@ -31,8 +31,6 @@ set :shared_paths, []
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
-  queue  %[npm install]
-  queue  %[bower install]
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
@@ -48,6 +46,8 @@ task :deploy => :environment do
     # Put things that will set up an empty directory into a fully set-up
     # instance of your project.
     invoke :'git:clone'
+    # queue  %[sudo npm install]
+    queue  %[bower install]
     invoke :'deploy:cleanup'
 
     to :launch do
