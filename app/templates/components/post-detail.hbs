@@ -3,10 +3,9 @@
   <div class="block">
     <div class="post">
       <h1 class="post--title">{{post.title}}</h1>
-      <span class="post--meta post--date timebomb">{{post.date}}</span>
       <span class="post--meta post--date">{{post.shortDate}}</span>
-      <div class="post--content timebomb">{{post.content}}</div>
       <div class="post--content">{{post.contentRendered}}</div>
+      <noscript>{{post.date}}{{post.content}}</noscript>
     </div>
   </div>
 </div>
