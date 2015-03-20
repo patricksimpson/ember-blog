@@ -31,6 +31,8 @@ set :shared_paths, []
 # This task is the environment that is loaded for most commands, such as
 # `mina deploy` or `mina rake`.
 task :environment do
+  queue  %[npm install]
+  queue  %[bower install]
 end
 
 # Put any custom mkdir's in here for when `mina setup` is ran.
