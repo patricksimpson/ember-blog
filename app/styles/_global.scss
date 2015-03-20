@@ -14,3 +14,12 @@ img {
   margin: 0 auto;
   margin-bottom: 1em;
 }
+
+.text {
+  font-family: $f-normal;
+  color: $c-text;
+}
+.pure-g, .pure-g [class*="pure-u"] {
+  font-family: $f-normal;
+  color: $c-text;
+}

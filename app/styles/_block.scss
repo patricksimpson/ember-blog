@@ -1,8 +1,10 @@
 .block {
+  @extend .text;
   margin: 0 1em;
   line-height: 1.5;
   font-size: 1.15em;
   padding: 1em 0;
+
   .icon:before{
     margin-left: 0px;
     margin-right: 5px;
@@ -11,10 +13,12 @@
 
 .block-inner {
   @extend .block;
+  @extend .text;
   margin: 0 1em;
   line-height: 1.5;
   font-size: 1.15em;
   padding: 0;
+
 }
 .content {
   background-color: $c-content_bg;
