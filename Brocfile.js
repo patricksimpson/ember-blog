@@ -5,7 +5,7 @@ var EmberApp = require('ember-cli/lib/broccoli/ember-app');
 var app = new EmberApp({
   storeConfigInMeta: false,
   fingerprint: {
-    exclude: ['vendor.js', 'vendor.css', 'patricksimpson.js', 'patricksimpson.css']
+    exclude: ['vendor.js', 'vendor.css', 'patricksimpson.js', 'patricksimpson.css', 'imgs/nuclear.png']
   }
 });
 
