@@ -8,7 +8,22 @@ export default DS.Model.extend({
   date: DS.attr('date'),
   link: DS.attr('string'),
   contentRendered: function() {
-    return this.get('content').htmlSafe();
+    var r = this.get('content').htmlSafe();
+    if(r) {
+      return r;
+    }
+    var element = document.createElement('div');
+    var decode = function(str) {
+      if(str && typeof str === 'string') {
+        str = str.replace(/<script[^>]*>([\S\s]*?)<\/script>/gmi, '');
+        str = str.replace(/<\/?\w(?:[^"'>]|"[^"]*"|'[^']*')*>/gmi, '');
+        element.innerHTML = str;
+        str = element.textContent;
+        element.textContent = '';
+      }
+      return str;
+    };
+    return decode(this.get('content'));
   }.property('content'),
   excerptRendered: function() {
     return this.get('excerpt').htmlSafe();
