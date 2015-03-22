@@ -22,5 +22,7 @@ var app = new EmberApp({
 // please specify an object with the list of modules as keys
 // along with the exports of each module as its value.
 
+app.import('bower_components/he/he.js');
+app.import('bower_components/to-markdown/src/to-markdown.js');
 app.import('bower_components/moment/moment.js');
 module.exports = app.toTree();

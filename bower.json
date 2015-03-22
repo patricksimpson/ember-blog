@@ -19,5 +19,9 @@
     "ember": "canary",
     "ember-data": "canary",
     "handlebars": "~2.0.0"
+  },
+  "devDependencies": {
+    "to-markdown": "~0.0.3",
+    "he": "~0.4.1"
   }
 }
