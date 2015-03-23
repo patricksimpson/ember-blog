@@ -2,6 +2,7 @@ a, .about a, .link {
   color: $c-link;
   text-decoration: none;
   transition: all 0.5s;
+  cursor: pointer;
   &:hover {
     color: darken( $c-link, 20% );
   }
