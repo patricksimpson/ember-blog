@@ -4,8 +4,6 @@ export default DS.RESTSerializer.extend({
   normalizePayload: function(type, payload) {
     var raw, posts;
     posts = [];
-    console.log(type);
-    console.log(payload);
     for(var i = 0; i < type.length; i++) {
       raw = type[i];
       posts.push({
