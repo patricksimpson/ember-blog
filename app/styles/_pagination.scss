@@ -1,0 +1,32 @@
+.paginatin-centered {
+  text-align: center;
+}
+.pagination {
+  margin: 1em 0;
+  width: 100%;
+  padding: 0;
+
+  .arrow, .page-number {
+    list-style: none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    &.disabled {
+      opacity: 0.5;
+    }
+    &.active {
+      > a {
+        background-color: darken($c-nav_bg, 10%);
+      }
+    }
+    > a {
+      padding: 0.25em 1em;
+      background-color: lighten($c-nav_bg, 3%);
+      color: #333;
+      &:hover {
+        background-color: lighten($c-nav_bg, 10%);
+      }
+    }
+  }
+
+}
