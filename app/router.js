@@ -18,10 +18,8 @@ Router.map(function() {
   this.resource("home", {
     path: "/"
   }, function() {});
-  this.resource("post", {
-    path: "/post/:post_slug"
-  }, function() {});
-
+  this.resource('post', {path: '/posts/:post_slug'});
+  this.resource("post", {path: "/post/:post_slug"});
   this.route("about");
   this.route("posts");
 });
