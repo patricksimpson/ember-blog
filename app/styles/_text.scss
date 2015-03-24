@@ -43,4 +43,10 @@
     margin: 0.5em;
     background-color: #eee;
   }
+  pre.content {
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+    @extend .text-normal;
+  }
 }

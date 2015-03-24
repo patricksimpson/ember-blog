@@ -11,6 +11,7 @@ Router.map(function() {
     $('.ember-view').addClass('timebomb');
     Ember.run.later(this, function(){
       $('.timebomb').hide();
+      $('body').addClass('js');
     }, 350);
     this.isStaticContentRemoved = true;
   }
