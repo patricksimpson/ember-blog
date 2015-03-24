@@ -8,17 +8,17 @@ var Router = Ember.Router.extend({
 
 Router.map(function() {
   if(window && typeof($) !== "undefined" && !this.isStaticContentRemoved) {
-    $('.ember-view').addClass('timebomb');
+    $(".ember-view").addClass("timebomb");
     Ember.run.later(this, function(){
-      $('.timebomb').hide();
-      $('body').addClass('js');
+      $(".timebomb").hide();
+      $("body").addClass("js");
     }, 350);
     this.isStaticContentRemoved = true;
   }
   this.resource("home", {
     path: "/"
   }, function() {});
-  this.resource('post', {path: '/posts/:post_slug'});
+  this.resource("post", {path: "/posts/:post_slug"});
   this.resource("post", {path: "/post/:post_slug"});
   this.route("about");
   this.route("posts");
