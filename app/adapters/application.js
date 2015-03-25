@@ -9,7 +9,7 @@ export default ApplicationAdapter = DS.RESTAdapter.extend({
     if(jqXHR && jqXHR.getResponseHeader) {
       totalPages = jqXHR.getResponseHeader('X-WP-TotalPages');
     }
-    jsonPayload.meta = {total_pages: totalPages}
+    jsonPayload.meta = {total_pages: totalPages};
     return jsonPayload;
   }
 });

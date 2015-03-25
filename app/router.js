@@ -7,6 +7,9 @@ var Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  /* WARNGING: UGLY HACK AHEAD
+  *  Blows up Fastboot DOM.
+  */
   if(window && typeof($) !== "undefined" && !this.isStaticContentRemoved) {
     $(".ember-view").addClass("timebomb");
     Ember.run.later(this, function(){
@@ -15,9 +18,9 @@ Router.map(function() {
     }, 350);
     this.isStaticContentRemoved = true;
   }
-  this.resource("home", {
-    path: "/"
-  }, function() {});
+
+  // Routes
+  this.resource("home", {path: "/"});
   this.resource("post", {path: "/posts/:post_slug"});
   this.resource("post", {path: "/post/:post_slug"});
   this.route("about");
