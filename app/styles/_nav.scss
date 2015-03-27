@@ -7,11 +7,10 @@
   .link {
     transition: all 1s;
     color: $c-nav-link;
-    padding: 1em;
+    padding: 0.65em 1.3em;
 
     @media (min-width: 25em) {
-      padding: 1em 1.5em;
-      padding: 1em;
+      padding: 0.65em 1.3em;
     }
 
     display: inline-block;

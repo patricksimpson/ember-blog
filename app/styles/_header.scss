@@ -10,18 +10,18 @@
   }
 
   @media (min-width: 25em) {
-    padding: 1em;
+    padding: 0.35em;
   }
 }
 
 .site-title {
-  font-size: 2em;
+  font-size: 1.3em;
   padding: 0.25em;
   margin: 0;
   @extend .text-bold;
 }
 
 .intro-text {
-  font-size: 1.05em;
+  font-size: 0.9em;
   padding: 0.5em;
 }
