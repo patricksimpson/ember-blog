@@ -1,5 +1,5 @@
 import DS from 'ember-data';
-import ApplicationAdapter from './application';
+// import ApplicationAdapter from './application';
 
 export default ApplicationAdapter = DS.RESTAdapter.extend({
   host: 'http://api.patricksimpson.me',
