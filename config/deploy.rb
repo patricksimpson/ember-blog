@@ -54,7 +54,7 @@ task :deploy => :environment do
     to :launch do
       # queue "mkdir -p #{deploy_to}/#{current_path}/tmp/"
       # queue "touch #{deploy_to}/#{current_path}/tmp/restart.txt"
-      queue "forever stopall && screen-d -m forever ./node_modules/ember-cli/bin/ember fastboot -prod"
+      queue "forever stopall && screen -d -m forever ./node_modules/ember-cli/bin/ember fastboot -prod"
     end
   end
 end
